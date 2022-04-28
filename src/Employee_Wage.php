@@ -1,6 +1,8 @@
 <?php
 
-class Employee_Wage
+include 'Employee_Wage_Interface.php';
+
+class Employee_Wage implements computeEmpWage
 {
     public const FULL_TIME_WORKING_HRS = 8;
     public const PART_TIME_WORKING_HRS = 4;
