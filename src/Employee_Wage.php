@@ -1,6 +1,5 @@
 <?php
 
-
 class Employee_Wage
 {
     public const FULL_TIME_WORKING_HRS = 8;
@@ -103,6 +102,9 @@ class Employee_Wage
     }
 }
 $company1 = new Employee_Wage(20, 20, 100);
-$company1->userInput();
 $company2 = new Employee_Wage(25, 25, 125);
-$company2->userInput();
+$company3 = new Employee_Wage(30, 30, 150);
+$empWageArray = array($company1, $company2, $company3);
+foreach ($empWageArray as $company) {
+    $company->userInput();
+}
